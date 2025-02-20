@@ -1,6 +1,7 @@
 import logging
 import concurrent.futures
 import time
+from fake_db import FakeDatabase
 
 if __name__ == "__main__":
     format = "%(asctime)s: %(message)s"
