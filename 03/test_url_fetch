@@ -1,0 +1,25 @@
+
+
+import unittest
+from unittest.mock import patch, Mock
+from url_fetch import fetch_extract_html
+import json
+
+class TestFetchExtractHtml(unittest.TestCase):
+
+    @patch('urllib.request.urlopen')
+    def test_fetch_extract_html_success(self, mock_urlopen):
+        mock_response = Mock()
+        #  test resonse = 200 and check the content
+        self.assertEqual(result, "<p>This is a test extract_html.</p>")
+
+        
+        
+    @patch('urllib.request.urlopen')
+    def test_fetch_extract_html_error(self, mock_urlopen):
+        mock_response = Mock()
+
+        self.assertEqual(result, "Error: Unable to fetch data. Status code: 404")
+
+if __name__ == "__main__":
+    unittest.main()

@@ -7,7 +7,7 @@ import logging
 import time
 
 class FakeDatabase:
-
+ 
     def __init__(self):
         self.value = 0
     def update(self, name):
