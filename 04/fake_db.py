@@ -1,3 +1,8 @@
+"""
+This DB class is not thread safe. 
+How can we make this thread safe? 
+"""
+
 import logging
 import time
 

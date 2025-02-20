@@ -1,21 +1,12 @@
 
-# DB abstract class 
+# Design database access classes using inheritance
+
+# DB -> MySQL
+# DB -> Oracle, etc. 
 
 # methods
 # 1. connect
 # 2. execute_query
-
-from abc import abstractmethod
-
-
-class db_connect():
-    def __init__(self, name):
-        self.name = name
-
-    @abstractmethod
-    def connect(self):
-        pass
-
 
 
 
